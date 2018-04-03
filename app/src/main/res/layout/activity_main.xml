@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:columnCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rowCount="6">
+
+        <Button
+            android:id="@+id/emergencyBtn1"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#941A14"
+            android:fontFamily="@font/roboto_mono_light"
+            android:text="EMERGENCY"
+            android:textColor="#000"
+            android:textSize="24sp"
+            app:layout_columnSpan="2"
+            app:layout_rowSpan="2"
+            app:layout_rowWeight="2" />
+
+        <Button
+            android:id="@+id/emergencyBtn2"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_margin="0dp"
+            android:background="#3BA1AE"
+            android:fontFamily="@font/roboto_mono_light"
+            android:text="CUSTOM"
+            android:textColor="#000"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="2"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/emergencyBtn3"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            android:background="#0D3E56"
+            android:fontFamily="@font/roboto_mono_light"
+            android:text="CUSTOM"
+            android:textColor="#000"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="2"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/emergencyBtn4"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            android:background="#3B68AE"
+            android:fontFamily="@font/roboto_mono_light"
+            android:text="CUSTOM"
+            android:textColor="#000"
+            app:layout_column="0"
+            app:layout_gravity="fill"
+            app:layout_row="3"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/emergencyBtn5"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            android:background="#3BAE82"
+            android:fontFamily="@font/roboto_mono_light"
+            android:text="CUSTOM"
+            android:textColor="#000"
+            app:layout_column="1"
+            app:layout_gravity="fill"
+            app:layout_row="3"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/safeBtn"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:background="#E35D24"
+            android:fontFamily="@font/roboto_mono_light"
+
+            android:text="ALL SAFE"
+            android:textColor="#000"
+            android:textSize="18sp"
+            app:layout_columnSpan="2"
+            app:layout_row="4"
+            app:layout_rowWeight="1" />
+    </android.support.v7.widget.GridLayout>
+
+</android.support.constraint.ConstraintLayout>
